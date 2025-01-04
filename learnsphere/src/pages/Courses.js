@@ -9,37 +9,61 @@ const Courses = () => {
       id: 1,
       title: "React for Beginners",
       description: "Learn the basics of React.js and build dynamic web applications.",
-      logo: "https://via.placeholder.com/100?text=React", // Example logo
+      iconClass: "fab fa-react", // FontAwesome icon class for React
     },
     {
       id: 2,
       title: "Advanced JavaScript",
       description: "Master advanced JavaScript concepts including closures and promises.",
-      logo: "https://via.placeholder.com/100?text=JavaScript",
+      iconClass: "fab fa-js-square", // FontAwesome icon class for JavaScript
     },
     {
       id: 3,
       title: "Vue.js Crash Course",
       description: "Learn Vue.js from scratch and build interactive front-end applications.",
-      logo: "https://via.placeholder.com/100?text=Vue",
+      iconClass: "fab fa-vuejs", // FontAwesome icon class for Vue.js
     },
     {
       id: 4,
       title: "Node.js Essentials",
       description: "Get started with server-side JavaScript using Node.js.",
-      logo: "https://via.placeholder.com/100?text=Node.js",
+      iconClass: "fab fa-node", // FontAwesome icon class for Node.js
     },
     {
       id: 5,
       title: "TypeScript Basics",
       description: "Learn TypeScript and how it improves JavaScript development.",
-      logo: "https://via.placeholder.com/100?text=TypeScript",
+      iconClass: "fab fa-github", // FontAwesome icon class for GitHub (placeholder)
     },
     {
       id: 6,
       title: "Introduction to Angular",
       description: "Dive into Angular and build scalable front-end applications.",
-      logo: "https://via.placeholder.com/100?text=Angular",
+      iconClass: "fab fa-angular", // FontAwesome icon class for Angular
+    },
+    {
+      id: 7,
+      title: "Python for Data Science",
+      description: "Learn Python programming and how it's used in data science.",
+      iconClass: "fab fa-python", // FontAwesome icon class for Python
+    },
+    {
+      id: 8,
+      title: "Machine Learning Fundamentals",
+      description: "Understand the basics of machine learning and how to apply them.",
+      iconClass: "fas fa-cogs", // FontAwesome icon class for Machine Learning
+    },
+    {
+      id: 9,
+      title: "Docker and Containers",
+      description: "Master Docker to create isolated environments for your applications.",
+      iconClass: "fab fa-docker", // FontAwesome icon class for Docker
+    },
+    {
+      id: 10,
+      title: "Introduction to SQL",
+      description: "Learn the fundamentals of SQL for managing databases.",
+      iconClass: "fas fa-database", // FontAwesome icon class for SQL
     },
   ];
 
@@ -75,12 +99,8 @@ const Courses = () => {
             key={course.id}
             className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
           >
-            {/* Course Logo */}
-            <img
-              src={course.logo}
-              alt={`${course.title} logo`}
-              className="mb-4 w-16 h-16"
-            />
+            {/* Course Icon */}
+            <i className={`${course.iconClass} text-3xl mb-4`} />
 
             <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
             <p className="text-sm text-gray-600 mb-4">{course.description}</p>
