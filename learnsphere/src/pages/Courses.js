@@ -33,7 +33,7 @@ const Courses = () => {
       id: 5,
       title: "TypeScript Basics",
       description: "Learn TypeScript and how it improves JavaScript development.",
-      iconClass: "fab fa-github", // FontAwesome icon class for GitHub (placeholder)
+      iconClass: "fab fa-angle-right", // FontAwesome icon class for GitHub (placeholder)
     },
     {
       id: 6,
